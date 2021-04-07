@@ -1,0 +1,33 @@
+body { 
+	border: 1px solid #607d8b;
+	text-align: center;
+	padding: 20px 10px 20px 10px;
+
+	
+ }
+ .botones { 
+	border: 1px solid #ffffff;
+	background-color: #8bc34a;
+	color: #ffffff;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+	width: 60px;
+	height: 30px;
+	font-size: 15px;
+
+}
+
+.visor {
+	border-radius: 10px;
+	border: 1px solid #607d8b;
+	width: 400px;
+	height: 50px;
+
+}
+
+#botones2 {
+	width: 100px;
+	height: 30px;
+
+}

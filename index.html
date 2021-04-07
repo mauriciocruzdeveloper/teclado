@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>teclado</title>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css" media="screen"/>
+</head>
+<body>
+
+ <input type="text" name="visor" class="visor" id="visor"> <br>
+
+	<script >
+		
+		var linea1 = ['q', 'w', 'e', 'r' , 't', 'y', 'u', 'i','o', 'p'];
+
+		for (var i=0; i<linea1.length; i++) {
+		document.write('<button type="button" class="botones" onclick="escribir(linea1['+ i +'])">' + linea1[i] + '</button>');
+		};
+
+		document.write('<br>');
+
+
+		var linea2 = ['a', 's', 'd', 'f' , 'g', 'h', 'j', 'k','l', 'ñ'];
+
+		for (var i=0; i<linea2.length; i++) {
+		document.write('<button type="button" class="botones" onclick="escribir(linea2['+ i +'])" />' + linea2[i] + '</button>');
+		};
+
+		document.write('<br>');
+
+		var linea3 = ['z', 'x', 'c', 'v' , 'b', 'n', 'm'];
+
+		for (var i=0; i<linea3.length; i++) {
+		document.write('<button type="button" class="botones" onclick="escribir(linea3['+ i +'])" />' + linea3[i] + '</button>');
+		};
+		document.write('<br>');
+
+function escribir(letra) {
+	document.getElementById('visor').value += letra;
+}
+
+function borrar() {
+	document.getElementById('visor').value = "";
+}
+function atras() {
+	var text1= document.getElementById('visor').value;
+	var text2= text1.slice(0,text1.length -1);
+	document.getElementById('visor').value=text2;
+}
+
+
+	</script>
+
+<button type="button" class="botones" id="botones2" onclick="atras()"/>backspace</button>
+<button type="button" class="botones" id="botones2" onclick="borrar()"/>borrar</button>
+
+
+	
+</body>
+</html>
